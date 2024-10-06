@@ -26,6 +26,7 @@
     "./tooltip": "./src/components/tooltip.tsx",
     "./dialog": "./src/components/dialog.tsx",
     "./icons": "./src/components/icons.tsx",
+    "./flickering-grid": "./src/components/flickering-grid.tsx",
     "./tailwind.config": "./tailwind.config.ts",
     "./postcss": "./postcss.config.js"
   },
@@ -34,6 +35,7 @@
     "@radix-ui/react-slot": "^1.1.0",
     "@radix-ui/react-tooltip": "^1.1.2",
     "class-variance-authority": "^0.7.0",
+    "framer-motion": "^11.11.1",
     "lucide-react": "^0.438.0",
     "tailwind-merge": "^2.5.2",
     "tailwindcss-animate": "^1.0.7"
