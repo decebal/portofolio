@@ -23,6 +23,7 @@ Everything you need to build a production ready SaaS, it's a opinionated stack b
 [Next.js](https://nextjs.org/) - Framework<br>
 [Turborepo](https://turbo.build) - Build system<br>
 [Biome](https://biomejs.dev) - Linter, formatter<br>
+[Once UI](https://once-ui.com) - Ui Component Library
 [TailwindCSS](https://tailwindcss.com/) - Styling<br>
 [Shadcn](https://ui.shadcn.com/) - UI components<br>
 [TypeScript](https://www.typescriptlang.org/) - Type safety<br>
