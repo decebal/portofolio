@@ -78,7 +78,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
             radius="l"
             alt={title}
             aspectRatio="16 / 9"
-            src={images[activeIndex]}
+            src={images[activeIndex] as string}
             style={{
               border: "1px solid var(--neutral-alpha-weak)",
               ...(images.length > 1 && {

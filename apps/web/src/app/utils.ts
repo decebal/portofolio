@@ -67,9 +67,9 @@ export function getPosts(customPath = ["", "", "", ""]) {
 export function formatDate(date: string, includeRelative = false) {
   const currentDate = new Date();
 
-  let targetDateUnformatted = date
+  let targetDateUnformatted = date;
   if (!date.includes("T")) {
-      targetDateUnformatted = `${date}T00:00:00`;
+    targetDateUnformatted = `${date}T00:00:00`;
   }
 
   const targetDate = new Date(targetDateUnformatted);
@@ -77,7 +77,7 @@ export function formatDate(date: string, includeRelative = false) {
   const monthsAgo = currentDate.getMonth() - targetDate.getMonth();
   const daysAgo = currentDate.getDate() - targetDate.getDate();
 
-  let formattedDate: string
+  let formattedDate: string;
 
   if (yearsAgo > 0) {
     formattedDate = `${yearsAgo}y ago`;

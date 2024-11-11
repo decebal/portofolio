@@ -31,7 +31,7 @@ const defaultAllowedCharacters = [
 
 function getRandomCharacter(charset: string[]): string {
   const randomIndex = Math.floor(Math.random() * charset.length);
-  return charset[randomIndex];
+  return charset[randomIndex] || "";
 }
 
 function createEventHandler(

@@ -12,7 +12,8 @@ import {
 import { person, about, social, baseURL } from "@/app/resources";
 import TableOfContents from "@/app/about/components/TableOfContents";
 import styles from "@/app/about/about.module.scss";
-import {PiHandWaving} from "react-icons/pi";
+import { PiHandWaving } from "react-icons/pi";
+import type { ImageType } from "@/app/resources/types";
 
 export function generateMetadata() {
   const title = about.title;
@@ -275,22 +276,22 @@ export default function About() {
                     </Flex>
                     {experience.images.length > 0 && (
                       <Flex fillWidth paddingTop="m" paddingLeft="40" wrap>
-                        {experience.images.map((image, index) => (
+                        {experience.images.map((image: ImageType, index) => (
                           <Flex
                             // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
                             key={index}
                             border="neutral-medium"
                             borderStyle="solid-1"
                             radius="m"
-                            minWidth={image?.width || 10}
-                            height={image?.height || 10}
+                            minWidth={image.width}
+                            height={image.height}
                           >
                             <SmartImage
                               enlarge
                               radius="m"
-                              sizes={image?.width?.toString()}
-                              alt={image?.alt || ""}
-                              src={image?.src || ""}
+                              sizes={image.width.toString()}
+                              alt={image.alt}
+                              src={image.src}
                             />
                           </Flex>
                         ))}

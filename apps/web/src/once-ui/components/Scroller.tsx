@@ -121,8 +121,8 @@ const Scroller: React.FC<ScrollerProps> = ({
         fillWidth
         ref={scrollerRef}
         className={classNames(styles.scroller, {
-          [styles.row]: direction === "row",
-          [styles.column]: direction === "column",
+          [styles.row as string]: direction === "row",
+          [styles.column as string]: direction === "column",
         })}
         {...props}
       >

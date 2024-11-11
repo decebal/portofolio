@@ -87,7 +87,7 @@ const Checkbox: React.FC<CheckboxProps> = forwardRef<
           onKeyDown={handleKeyDown}
           tabIndex={0}
           className={classNames(styles.checkbox, {
-            [styles.checked]:
+            [styles.checked as string]:
               controlledIsChecked !== undefined
                 ? controlledIsChecked || isIndeterminate
                 : isChecked,

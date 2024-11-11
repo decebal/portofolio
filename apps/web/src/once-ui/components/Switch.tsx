@@ -42,7 +42,7 @@ const Switch = forwardRef<HTMLDivElement, SwitchProps>(
         justifyContent={reverse ? "space-between" : "auto"}
         fillWidth={reverse}
         className={classNames(styles.container, className, {
-          [styles.reverse]: reverse,
+          [styles.reverse as string]: reverse,
         })}
         onClick={onToggle}
         role="switch"
@@ -52,7 +52,7 @@ const Switch = forwardRef<HTMLDivElement, SwitchProps>(
       >
         <div
           className={classNames(styles.switch, {
-            [styles.checked]: isChecked,
+            [styles.checked as string]: isChecked,
           })}
         >
           <div
@@ -60,7 +60,7 @@ const Switch = forwardRef<HTMLDivElement, SwitchProps>(
             // biome-ignore lint/a11y/noNoninteractiveTabindex: <explanation>
             tabIndex={0}
             className={classNames(styles.toggle, {
-              [styles.checked]: isChecked,
+              [styles.checked as string]: isChecked,
             })}
           />
         </div>

@@ -1,7 +1,7 @@
 "use client";
 
 import type React from "react";
-import { forwardRef, type ReactNode } from "react"
+import { forwardRef, type ReactNode } from "react";
 import classNames from "classnames";
 import Link from "next/link";
 import { Icon } from ".";

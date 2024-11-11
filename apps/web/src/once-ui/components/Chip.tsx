@@ -77,8 +77,8 @@ const Chip: React.FC<ChipProps> = forwardRef<HTMLDivElement, ChipProps>(
         tabIndex={0}
         aria-pressed={selected}
         className={classNames(styles.chip, className, {
-          [styles.selected]: selected,
-          [styles.unselected]: !selected,
+          [styles.selected as string]: selected,
+          [styles.unselected as string]: !selected,
         })}
         onClick={onClick}
         onKeyDown={handleKeyDown}

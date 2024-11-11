@@ -70,26 +70,26 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
       "font-default",
       "font-m",
       {
-        [styles.filled]: isFilled,
-        [styles.focused]: isFocused,
-        [styles.withPrefix]: hasPrefix,
-        [styles.withSuffix]: hasSuffix,
-        [styles.labelAsPlaceholder]: labelAsPlaceholder,
-        [styles.hasChildren]: children,
+        [styles.filled as string]: isFilled,
+        [styles.focused as string]: isFocused,
+        [styles.withPrefix as string]: hasPrefix,
+        [styles.withSuffix as string]: hasSuffix,
+        [styles.labelAsPlaceholder as string]: labelAsPlaceholder,
+        [styles.hasChildren as string]: children,
       },
     );
 
     return (
       <div
         className={classNames(styles.wrapper, className, {
-          [styles.error]: error,
+          [styles.error as string]: error,
         })}
       >
         <div
           className={classNames(
             styles.base,
-            { [styles.s]: height === "s" },
-            { [styles.m]: height === "m" },
+            { [styles.s as string]: height === "s" },
+            { [styles.m as string]: height === "m" },
           )}
           style={{ borderRadius: radius }}
         >
@@ -116,7 +116,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
                 variant="label-default-m"
                 htmlFor={id}
                 className={classNames(styles.label, {
-                  [styles.floating]: isFocused || isFilled,
+                  [styles.floating as string]: isFocused || isFilled,
                 })}
               >
                 {label}

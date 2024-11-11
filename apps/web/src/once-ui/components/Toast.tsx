@@ -48,8 +48,8 @@ const Toast = forwardRef<HTMLDivElement, ToastProps>(
         role="alert"
         aria-live="assertive"
         className={classNames(className, styles.toast, styles[variant], {
-          [styles.visible]: visible,
-          [styles.hidden]: !visible,
+          [styles.visible as string]: visible,
+          [styles.hidden as string]: !visible,
         })}
       >
         <Flex fillWidth alignItems="center" gap="8">

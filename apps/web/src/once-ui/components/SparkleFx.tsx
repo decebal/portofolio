@@ -37,7 +37,7 @@ const SparkleFx = forwardRef<HTMLDivElement, SparkleFxProps>(
         return;
       }
 
-      const getSpeedRange = () => {
+      const getSpeedRange = (): [number, number] => {
         switch (speed) {
           case "slow":
             return [8, 12];
@@ -56,7 +56,7 @@ const SparkleFx = forwardRef<HTMLDivElement, SparkleFxProps>(
         if (activeParticlesRef.current >= count) return;
 
         const particle = document.createElement("div");
-        particle.className = styles.sparkleParticle;
+        particle.className = styles.sparkleParticle as string;
 
         const size = Math.random() * 3 + 1;
         particle.style.width = `${size}px`;

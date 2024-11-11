@@ -17,7 +17,7 @@ export default function MasonryGrid() {
   return (
     <Masonry
       breakpointCols={breakpointColumnsObj}
-      className={styles.masonryGrid}
+      className={styles.masonryGrid as string}
       columnClassName={styles.masonryGridColumn}
     >
       {gallery.images.map((image, index) => (

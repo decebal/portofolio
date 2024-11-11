@@ -73,7 +73,7 @@ const Dropdown = forwardRef<HTMLDivElement, DropdownProps>(
               : options.length - 1,
           );
         } else if (event.key === "Enter") {
-          onOptionSelect(options[focusedIndex]);
+          onOptionSelect(options[focusedIndex] as DropdownOptions);
         } else if (/^[a-zA-Z0-9]$/.test(event.key)) {
           setTypedChars((prevChars) => prevChars + event.key);
         }
@@ -177,9 +177,9 @@ const Dropdown = forwardRef<HTMLDivElement, DropdownProps>(
               role="option"
               aria-selected={selectedOption === option.value}
               className={classNames(styles.option, {
-                [styles.focused]: focusedIndex === index,
-                [styles.selected]: selectedOption === option.value,
-                [styles.danger]: option.danger,
+                [styles.focused as string]: focusedIndex === index,
+                [styles.selected as string]: selectedOption === option.value,
+                [styles.danger as string]: option.danger,
               })}
               onClick={() => handleOptionClick(option)}
               onMouseEnter={() => handleOptionMouseEnter(index)}

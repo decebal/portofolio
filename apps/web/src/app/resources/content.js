@@ -72,9 +72,10 @@ const home = {
     // biome-ignore lint/correctness/useJsxKeyInIterable: <explanation>
     <p className="mb-2">
       Mobilized high-performing teams to fast-track MVP launches, bringing
-      projects to life in as little as three months. Adept in multiple programming like{" "}
-      <InlineCode>NodeJS, Golang, Rust, ReactJS, and Solidity</InlineCode>, with deep roots in
-      cloud architecture and microservices.
+      projects to life in as little as three months. Adept in multiple
+      programming like{" "}
+      <InlineCode>NodeJS, Golang, Rust, ReactJS, and Solidity</InlineCode>, with
+      deep roots in cloud architecture and microservices.
     </p>,
     // biome-ignore lint/correctness/useJsxKeyInIterable: <explanation>
     <br />,

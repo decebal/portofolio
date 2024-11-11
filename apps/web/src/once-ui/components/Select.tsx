@@ -94,8 +94,8 @@ const Select = forwardRef<HTMLDivElement, SelectProps>(
           onBlur={handleBlur}
           readOnly
           className={classNames({
-            [inputStyles.filled]: isFilled,
-            [inputStyles.focused]: isFocused,
+            [inputStyles.filled as string]: isFilled,
+            [inputStyles.focused as string]: isFocused,
           })}
           aria-haspopup="listbox"
           aria-expanded={isDropdownOpen}
