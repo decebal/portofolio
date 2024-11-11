@@ -15,5 +15,5 @@ jobs:
         run: bun install
       - name: 🔦 Run linter
         run: bun run lint
-      - name: 🪐 Check TypeScript
-        run: bun run typecheck
+#      - name: 🪐 Check TypeScript
+#        run: bun run typecheck

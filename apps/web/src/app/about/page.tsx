@@ -87,7 +87,7 @@ export default function About() {
               .map((item) => item.link),
             worksFor: {
               "@type": "Organization",
-              name: about.work.experiences[0].company || "",
+              name: about.work.experiences[0]?.company || "",
             },
           }),
         }}
@@ -117,7 +117,7 @@ export default function About() {
           >
             <Avatar src={person.avatar} size="xl" />
             <Flex gap="8" alignItems="center">
-              <PiHandWaving onBackground="accent-weak" />
+              <PiHandWaving />
               {person.location}
             </Flex>
             {person.languages.length > 0 && (
@@ -282,15 +282,15 @@ export default function About() {
                             border="neutral-medium"
                             borderStyle="solid-1"
                             radius="m"
-                            minWidth={image.width}
-                            height={image.height}
+                            minWidth={image?.width || 10}
+                            height={image?.height || 10}
                           >
                             <SmartImage
                               enlarge
                               radius="m"
-                              sizes={image.width.toString()}
-                              alt={image.alt}
-                              src={image.src}
+                              sizes={image?.width?.toString()}
+                              alt={image?.alt || ""}
+                              src={image?.src || ""}
                             />
                           </Flex>
                         ))}
