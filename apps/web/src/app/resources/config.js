@@ -1,18 +1,16 @@
-const baseURL = "nextjs-portfolio.up.railway.app";
+const baseURL = "decebaldobrica.com";
 
 const routes = {
   "/": true,
   "/about": true,
-  "/work": true,
-  "/blog": true,
+  "/work": false,
+  "/blog": false,
   "/gallery": true,
 };
 
 // Enable password protection on selected routes
 // Set password in pages/api/authenticate.ts
-const protectedRoutes = {
-  "/work/automate-design-handovers-with-a-figma-to-code-pipeline": true,
-};
+const protectedRoutes = {};
 
 const effects = {
   gradient: true,
@@ -22,11 +20,11 @@ const effects = {
 
 const style = {
   theme: "dark", // dark | light
-  neutral: "gray", // sand | gray | slate
+  neutral: "slate", // sand | gray | slate
   brand: "aqua", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
-  accent: "yellow", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
+  accent: "moss", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
   solid: "contrast", // color | contrast
-  solidStyle: "flat", // flat | plastic
+  solidStyle: "plastic", // flat | plastic
   border: "playful", // rounded | playful | conservative
   surface: "translucent", // filled | translucent
   transition: "all", // all | micro | macro
@@ -38,6 +36,7 @@ const display = {
 };
 
 const mailchimp = {
+  //TODO
   action: "https://url/subscribe/post?parameters",
   effects: {
     gradient: true,

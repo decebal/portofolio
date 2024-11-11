@@ -12,6 +12,7 @@ import {
 import { person, about, social, baseURL } from "@/app/resources";
 import TableOfContents from "@/app/about/components/TableOfContents";
 import styles from "@/app/about/about.module.scss";
+import {PiHandWaving} from "react-icons/pi";
 
 export function generateMetadata() {
   const title = about.title;
@@ -116,7 +117,7 @@ export default function About() {
           >
             <Avatar src={person.avatar} size="xl" />
             <Flex gap="8" alignItems="center">
-              <Icon onBackground="accent-weak" name="globe" />
+              <PiHandWaving onBackground="accent-weak" />
               {person.location}
             </Flex>
             {person.languages.length > 0 && (
