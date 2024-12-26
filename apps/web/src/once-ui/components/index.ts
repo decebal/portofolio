@@ -28,6 +28,7 @@ export { Input } from "./Input";
 export type { InputProps } from "./Input";
 export { InteractiveDetails } from "./InteractiveDetails";
 export type { InteractiveDetailsProps } from "./InteractiveDetails";
+export { Highlight } from "./Highlight";
 export { Kbd } from "./Kbd";
 export { LetterFx } from "./LetterFx";
 export { Logo } from "./Logo";

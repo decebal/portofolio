@@ -14,6 +14,7 @@ import TableOfContents from "@/app/about/components/TableOfContents";
 import styles from "@/app/about/about.module.scss";
 import { PiHandWaving } from "react-icons/pi";
 import type { ImageType } from "@/app/resources/types";
+import DownloadResumeButton from "@/components/DownloadResumeButton";
 
 export function generateMetadata() {
   const title = about.title;
@@ -131,6 +132,9 @@ export default function About() {
                 ))}
               </Flex>
             )}
+            <Flex wrap gap="8">
+              <DownloadResumeButton />
+            </Flex>
           </Flex>
         )}
         <Flex

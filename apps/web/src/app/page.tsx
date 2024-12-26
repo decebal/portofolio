@@ -8,7 +8,6 @@ import {
   Avatar,
   RevealFx,
 } from "@/once-ui/components";
-import { Projects } from "@/app/work/components/Projects";
 
 import {
   about,
@@ -20,6 +19,7 @@ import {
 } from "@/app/resources";
 import { Mailchimp } from "@/components";
 import { Posts } from "@/app/blog/components/Posts";
+import { SocialProofSection } from "@/components/SocialProofSection";
 
 export function generateMetadata() {
   const title = home.title;
@@ -120,6 +120,7 @@ export default function Home() {
           </RevealFx>
         </Flex>
       </Flex>
+      <SocialProofSection />
       {/*<RevealFx translateY="16" delay={0.6}>*/}
       {/*  <Projects range={[1, 1]} />*/}
       {/*</RevealFx>*/}

@@ -1,0 +1,15 @@
+/* Utility classes for Highlight */
+.highlight {
+  display: inline-block;
+  background-color: var(--color-cyan-light-bg, rgba(6, 182, 212, 0.2));
+  color: var(--color-cyan, #06b6d4);
+  font-weight: var(--font-weight-bold, 700);
+  padding: 0.125rem 0.5rem;
+  border-radius: var(--border-radius-sm, 0.25rem);
+  transition: background-color 0.3s, color 0.3s;
+
+  .dark & {
+    background-color: var(--color-cyan-dark-bg, rgba(6, 182, 212, 0.2));
+    color: var(--color-cyan, #06b6d4);
+  }
+}
